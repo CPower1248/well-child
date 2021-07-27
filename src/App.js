@@ -4,7 +4,6 @@ function App() {
   return (
     <div className="App">
 
-      {/* Banner Container? */}
       <div className="banner">
         <span>-QUIT-</span> 
         <h1>Well Child</h1>
