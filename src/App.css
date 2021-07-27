@@ -15,23 +15,37 @@
   /* border: 1px solid black; */
 }
 
-.banner {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  align-items: center;
+/*--- BANNER ---*/
+.banner-container {
   width: 95%;
-  height: 10%;
   margin: 1%;
   padding: 1%;
+  
+  /* border: 1px solid blue; */
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+
+  /* border: 1px solid green; */
+}
+.banner h1 {
+  width: 50%;
+}
+
+.banner span {
+  width: 15%;
+  height: 10%;
 
   border-radius: 10px;
-  border-top: 5px double black;
-  border-bottom: 5px double black;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
 
+/*--- CAROUSEL ---*/
 .carousel {
   display: flex;
   flex-flow: row;
@@ -51,7 +65,7 @@
   border-radius: 50%;
   margin: 1%;
 
-  border: 5px double black;
+  border: 5px solid black;
 }
 
 .profile.before, .profile.after {
@@ -59,7 +73,7 @@
   height: 10%;
   border-radius: 50%;
 
-  border: 2.5px double black;
+  border: 2.5px solid black;
 }
 
 .profile img {
@@ -68,6 +82,7 @@
   border-radius: 50%;
 }
 
+/*--- AGE-BAR ---*/
 .age-bar {
   display: flex;
   flex-flow: row;
@@ -95,8 +110,8 @@
   width: 20%;
   height: 40%;
 
-  border-top: 5px double black;
-  border-bottom: 5px double black;
+  border-top: 5px solid black;
+  border-bottom: 5px solid black;
   border-left: 1px solid black;
   border-right: 1px solid black;
 }
