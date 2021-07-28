@@ -5,11 +5,11 @@
 .App {
   display: flex;
   flex-flow: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
   margin: 1%;
   padding: 1%;
-  height: 98vh;
+  height: 95vh;
   text-align: center;
   
   /* border: 1px solid black; */
@@ -17,7 +17,9 @@
 
 /*--- BANNER ---*/
 .banner-container {
+  display: flex;
   width: 95%;
+  height: 10%;
   margin: 1%;
   padding: 1%;
   
@@ -26,17 +28,15 @@
 
 .banner {
   display: flex;
+  width: 100%;
   justify-content: space-between;
+  align-items: center;
 
   /* border: 1px solid green; */
-}
-.banner h1 {
-  width: 50%;
 }
 
 .banner span {
   width: 15%;
-  height: 10%;
 
   border-radius: 10px;
   border-top: 5px solid black;
@@ -52,7 +52,6 @@
   justify-content: space-evenly;
   align-items: center;
   width: 95%;
-  height: 80%;
   margin: 1%;
   padding: 1%;
 
@@ -89,7 +88,7 @@
   justify-content: center;
   align-items: center;
   width: 95%;
-  height: 20%;
+  height: 15%;
   margin: 1%;
   padding: 1%;
 
@@ -108,7 +107,7 @@
 
 .age-1, .age-2, .age-3, .age-4, .age-5 {
   width: 20%;
-  height: 40%;
+  height: 60%;
 
   border-top: 5px solid black;
   border-bottom: 5px solid black;
