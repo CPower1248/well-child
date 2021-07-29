@@ -8,7 +8,7 @@ const BannerContainer = styled.div`
   padding: 1%;
     
   /* border: 1px solid blue; */  
-`;
+`
 
 const BannerContent = styled.div`
   display: flex;
@@ -17,25 +17,31 @@ const BannerContent = styled.div`
   align-items: center;
 
   /* border: 1px solid green; */
-`;
 
-const BannerSpan = styled.span`
-  width: 15%;
+  button {
+    width: 15%;
+    background-color: white;
 
-  border-radius: 10px;
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-`;
+    border-radius: 10px;
+    border-top: 5px solid black;
+    border-bottom: 5px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+
+    &:hover {
+      background-color: black;
+      color: white;
+    }
+  }
+`
 
 function Banner() {
   return (
     <BannerContainer>
       <BannerContent>
-        <BannerSpan>-QUIT-</BannerSpan> 
+        <button>-QUIT-</button> 
         <h1>Well Child</h1>
-        <BannerSpan>-HAMB-</BannerSpan>
+        <button>-HAMB-</button>
       </BannerContent>
     </BannerContainer>
   )

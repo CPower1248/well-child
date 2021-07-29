@@ -14,7 +14,7 @@ const AppWrapper = styled.h1`
   height: 95vh;
   text-align: center;
   
-  border: 1px solid black;
+  /* border: 1px solid black; */
 `;
 
 function App() {
