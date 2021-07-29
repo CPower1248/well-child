@@ -1,85 +1,8 @@
-* {
-  /* border: 1px solid red; */
-}
-
-.App {
-  display: flex;
-  flex-flow: column;
-  /* justify-content: space-between; */
-  align-items: center;
-  margin: 1%;
-  padding: 1%;
-  height: 95vh;
-  text-align: center;
-  
-  /* border: 1px solid black; */
-}
-
 /*--- BANNER ---*/
-.banner-container {
-  display: flex;
-  width: 95%;
-  height: 10%;
-  margin: 1%;
-  padding: 1%;
-  
-  /* border: 1px solid blue; */
-}
 
-.banner {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  align-items: center;
-
-  /* border: 1px solid green; */
-}
-
-.banner span {
-  width: 15%;
-
-  border-radius: 10px;
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
-}
 
 /*--- CAROUSEL ---*/
-.carousel {
-  display: flex;
-  flex-flow: row;
-  justify-content: space-evenly;
-  align-items: center;
-  width: 95%;
-  margin: 1%;
-  padding: 1%;
 
-  /* border: 1px solid blue; */
-}
-
-.profile.current {
-  width: 350px;
-  height: 350px;
-  border-radius: 50%;
-  margin: 1%;
-
-  border: 5px solid black;
-}
-
-.profile.before, .profile.after {
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-
-  border: 2.5px solid black;
-}
-
-.profile img {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-}
 
 /*--- AGE-BAR ---*/
 .age-bar {
