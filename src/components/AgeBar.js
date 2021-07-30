@@ -2,11 +2,10 @@ import styled from "styled-components"
 
 const AgeBarContainer = styled.div`
   display: flex;
-  flex-flow: row;
   justify-content: center;
   align-items: center;
   width: 95%;
-  height: 15%;
+  height: 10%;
   margin: 1%;
   padding: 1%;
 
@@ -15,17 +14,16 @@ const AgeBarContainer = styled.div`
 
 const AgeButton = styled.button`
   width: 20%;
-  height: 60%;
-  background-color: white;
+  height: 80%;
+  background-color: rgba(0, 0, 0, 0.3);
 
-  border-top: 5px solid black;
-  border-bottom: 5px solid black;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-top: 4px solid rgba(0, 0, 0, 0.75);
+  border-bottom: 4px solid rgba(0, 0, 0, 0.75);
+  border-left: 1px solid rgba(0, 0, 0, 0.75);
+  border-right: 1px solid rgba(0, 0, 0, 0.75);
 
   &:hover {
-    background-color: black;
-    color: white;
+    background-color: rgba(255, 255, 0, .25);
   }
 `
 

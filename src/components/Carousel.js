@@ -18,15 +18,22 @@ const ProfileCurrent = styled.div`
   border-radius: 50%;
   margin: 1%;
 
-  border: 5px solid black;
+  border-top: 5px solid rgba(0, 0, 0, 0.75);
+  border-bottom: 5px solid rgba(0, 0, 0, 0.75);
+  border-left: 1px solid rgba(0, 0, 0, 0.75);
+  border-right: 1px solid rgba(0, 0, 0, 0.75);
+  border-radius: 50%;
 `;
 
 const ProfileBeforeAfter = styled.div`
   width: 75px;
   height: 75px;
+  
+  border-top: 4px solid rgba(0, 0, 0, 0.75);
+  border-bottom: 4px solid rgba(0, 0, 0, 0.75);
+  border-left: 1px solid rgba(0, 0, 0, 0.75);
+  border-right: 1px solid rgba(0, 0, 0, 0.75);
   border-radius: 50%;
-
-  border: 2.5px solid black;
 `;
 
 const ProfileImg = styled.img`
