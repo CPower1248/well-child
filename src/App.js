@@ -1,23 +1,39 @@
 import styled from "styled-components"
+import { connect } from "react-redux"
+
 import Banner from "./components/Banner"
 import Carousel from "./components/Carousel"
 import AgeBar from "./components/AgeBar"
 import AgeContent from "./components/AgeContent"
 
-const AppWrapper = styled.h1`
+const Home = styled.div`
   display: flex;
   flex-flow: column;
-  justify-content: space-between;
   align-items: center;
-  margin: 1%;
-  padding: 1%;
-  height: 95vh;
-  text-align: center;
-  
-  /* border: 1px solid black; */
-`;
+  justify-content: space-between;
 
-function App() {
+  width: 100%;
+  height: 95vh;
+`
+const NotHome = styled.div`
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: start;
+
+  width: 100%;
+  height: 95vh;
+`
+
+function App({ carousel }) {
+  let AppWrapper
+
+  if (carousel) {
+    AppWrapper = Home
+  } else {
+    AppWrapper = NotHome
+  }
+
   return (
     <AppWrapper>
       <Banner />
@@ -28,4 +44,10 @@ function App() {
   );
 }
 
-export default App;
+const mapStateToProps = state => {
+  return {
+    carousel: state.carousel
+  }
+}
+
+export default connect(mapStateToProps, {})(App);
