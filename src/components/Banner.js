@@ -1,12 +1,20 @@
+import styled from "styled-components"
+
+const BannerContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  height: 10%;
+`
+
 function Banner() {
   return (
-    <div className="banner-container">
-      <div className="banner">
-        <span>-QUIT-</span> 
-        <h1>Well Child</h1>
-        <span>-HAMB-</span>
-      </div>
-    </div>
+    <BannerContainer>
+      <button>-QUIT-</button> 
+      <h1>Well Child</h1>
+      <button>-HAMB-</button>
+    </BannerContainer>
   )
 }
 

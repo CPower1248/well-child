@@ -1,16 +1,23 @@
+import styled from "styled-components"
+
+const CarouselContainer = styled.div`
+ display:flex;
+ justify-content: space-evenly;
+
+ width: 100%;
+
+ img {
+  border-radius: 50%;
+ }
+`
+
 function Carousel() {
   return (
-    <div className="carousel">
-      <div className="profile before">
-        <img src="https://picsum.photos/100" alt="Previous Profile" />
-      </div>
-      <div className="profile current">
-        <img src="https://picsum.photos/200" alt="Current Profile" />
-      </div>
-      <div className="profile after">
-        <img src="https://picsum.photos/100" alt="Next Profile" />
-      </div>
-    </div>
+    <CarouselContainer>
+      <img src="https://picsum.photos/200" alt="Previous Profile" />
+      <img src="https://picsum.photos/200" alt="Current Profile" />
+      <img src="https://picsum.photos/200" alt="Next Profile" />
+    </CarouselContainer>
   )
 }
 
