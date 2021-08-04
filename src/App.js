@@ -6,6 +6,7 @@ import Carousel from "./components/Carousel"
 import AgeBar from "./components/AgeBar"
 import AgeContent from "./components/AgeContent"
 
+/* -styling */
 const Home = styled.div`
   display: flex;
   flex-flow: column;
