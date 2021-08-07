@@ -17,6 +17,7 @@ function AgeBar() {
       <div>
         <h2>How old are you?</h2>
       </div>
+      {/* --- FIX THIS --- */}
       <div>
         <button>
           <Link to="/ageContent/1">1 year</Link>
