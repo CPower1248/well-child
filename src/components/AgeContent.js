@@ -6,6 +6,7 @@ const AgeContentContainer = styled.div`
   align-items: center;
 
   width: 100%;
+  overflow: auto;
 
   /* border: 1px solid red; */
 

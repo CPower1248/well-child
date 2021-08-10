@@ -20,7 +20,7 @@ function App({ carousel }) {
   width: 100%;
   height: 95vh;
 
-  border: 1px solid red;
+  /* border: 1px solid red; */
 `
 
   return (
