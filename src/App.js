@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom"
+import { Switch, Route, Link } from "react-router-dom"
 import { connect } from "react-redux"
 
 import Banner from "./components/Banner"
@@ -36,14 +36,17 @@ function App({ carousel }) {
   }
 
   return (
-    <Router>
-      <AppWrapper>
-        <Banner />
-        <Carousel />
-        <AgeBar />
-        <AgeContent />
-      </AppWrapper>
-    </Router>
+    <AppWrapper>
+      <Banner path="/" />
+      <AgeBar path="/" />
+
+      <Carousel path="/Home" />
+
+      <Switch>
+        <AgeContent path="/ageContent" />
+      </Switch>
+      
+    </AppWrapper>
   );
 }
 

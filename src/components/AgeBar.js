@@ -9,22 +9,20 @@ const AgeBarContainer = styled.div`
 
   width: 100%;
   height: 10%;
+
+  /* border: 1px solid red; */
 `
 
 function AgeBar() {
   return (
     <AgeBarContainer>
+      <h2>How old are you?</h2>
       <div>
-        <h2>How old are you?</h2>
-      </div>
-      <div>
-        <button>
-          <Link to="/ageContent/1">1 year</Link>
-        </button>
+        <Link to="/ageContent/1">1 year</Link>
         <Link to="/ageContent/2">2 year</Link>
-        <Link to="/ageContent">3 year</Link>
-        <Link to="/ageContent">4 year</Link>
-        <Link to="/ageContent">5 year</Link>
+        <Link to="/ageContent/3">3 year</Link>
+        <Link to="/ageContent/4">4 year</Link>
+        <Link to="/ageContent/5">5 year</Link>
       </div>
     </AgeBarContainer>
   )
