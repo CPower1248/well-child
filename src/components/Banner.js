@@ -15,7 +15,7 @@ const BannerContainer = styled.div`
 function Banner() {
   return (
     <BannerContainer>
-      <NavLink to="/Home" >-HOME-</NavLink> 
+      <NavLink to="/" >-HOME-</NavLink> 
       <h1>Well Child</h1>
       <button>-HAMB-</button>
     </BannerContainer>

@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Switch, Route, Link } from "react-router-dom"
+import { Switch, useLocation } from "react-router-dom"
 import { connect } from "react-redux"
 
 import Banner from "./components/Banner"
@@ -7,40 +7,31 @@ import Carousel from "./components/Carousel"
 import AgeBar from "./components/AgeBar"
 import AgeContent from "./components/AgeContent"
 
-const Home = styled.div`
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: space-between;
 
-  width: 100%;
-  height: 95vh;
-`
-const NotHome = styled.div`
-  display: flex;
-  flex-flow: column;
-  align-items: center;
-  justify-content: start;
-
-  width: 100%;
-  height: 95vh;
-`
 
 function App({ carousel }) {
-  let AppWrapper
+  const { pathname } = useLocation()
 
-  if (carousel) {
-    AppWrapper = Home
-  } else {
-    AppWrapper = NotHome
-  }
+  const AppWrapper = styled.div`
+  display: flex;
+  flex-flow: column;
+  justify-content: ${pathname === "/" ? "space-between" : "start"};
+
+  width: 100%;
+  height: 95vh;
+
+  border: 1px solid red;
+`
 
   return (
     <AppWrapper>
       <Banner path="/" />
-      <AgeBar path="/" />
+      
+      <Switch>
+        <Carousel exact path="/" />
+      </Switch>
 
-      <Carousel path="/Home" />
+      <AgeBar path="/" />
 
       <Switch>
         <AgeContent path="/ageContent" />
