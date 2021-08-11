@@ -18,7 +18,6 @@ function App({ carousel }) {
   justify-content: ${pathname === "/" ? "space-between" : "start"};
 
   width: 100%;
-  height: 95vh;
 
   /* border: 1px solid red; */
 `

@@ -6,7 +6,6 @@ const AgeContentContainer = styled.div`
   align-items: center;
 
   width: 100%;
-  overflow: auto;
 
   /* border: 1px solid red; */
 
@@ -38,19 +37,25 @@ const Category = styled.div`
   img {
     width: 13vw;
     height: auto;
+
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 2px solid black;
   }
 
   button {
+    font-size: 1.5rem;
+    
     width: 100%;
 
-    font-size: 1.5rem;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
   }
 `
-// Separator needs styling
 const Separator = styled.div`
   margin: 2%;
 
-  border: 3px dotted red;
+  border: 7px dotted black;
 `
 
 function AgeContent() {
