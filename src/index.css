@@ -49,6 +49,7 @@ table {
 	border-spacing: 0;
 }
 
+/* Overall styling */
 * {
   /* border: 1px solid black; */
 	font-family: 'Gloria Hallelujah', cursive;
@@ -56,6 +57,7 @@ table {
 	box-sizing: border-box;
 }
 
+/* Font styling */
 h1 {
 	font-family: 'Gloria Hallelujah', cursive;
 	font-size: 4rem;
