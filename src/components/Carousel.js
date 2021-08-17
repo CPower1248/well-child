@@ -14,7 +14,8 @@ const CarouselContainer = styled.div`
     margin: 2%;
 
     border-radius: 50%;
-    /* border: 3px solid black; */
+    box-shadow: 0px 15px 25px -4px rgba(30,30,60,0.5);
+    border: 1px solid black;
   }
 `
 

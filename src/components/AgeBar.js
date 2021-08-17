@@ -31,6 +31,25 @@ const AgeButtonStart = styled.button`
   border-bottom-left-radius: 20px;
   border-top: 5px double black;
   border-bottom: 5px double black;
+
+  box-shadow: 0px 15px 25px -4px rgba(30,30,60,0.25);
+  transition: all 0.5s ease-in-out; 
+
+  &:hover {
+    background-color: black;
+
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top: 5px double white;
+    border-bottom: 5px double white;
+
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out; 
+    
+    .link {
+      color: white;
+    }
+  }
 `
 
 const AgeButton = styled.button`
@@ -38,6 +57,23 @@ const AgeButton = styled.button`
   border-radius: 0%;
   border-top: 5px double black;
   border-bottom: 5px double black;
+
+  box-shadow: 0px 15px 25px -4px rgba(30,30,60,0.25);
+  transition: all 0.5s ease-in-out; 
+
+  &:hover {
+    background-color: black;
+
+    border-top: 5px double white;
+    border-bottom: 5px double white;
+
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out; 
+    
+    .link {
+      color: white;
+    }
+  }
 `
 
 const AgeButtonEnd = styled.button`
@@ -47,6 +83,25 @@ const AgeButtonEnd = styled.button`
   border-bottom-right-radius: 20px;
   border-top: 5px double black;
   border-bottom: 5px double black;
+
+  box-shadow: 0px 15px 25px -4px rgba(30,30,60,0.25);
+  transition: all 0.5s ease-in-out; 
+
+  &:hover {
+    background-color: black;
+
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: 5px double white;
+    border-bottom: 5px double white;
+
+    transform: scale(1.1);
+    transition: all 0.5s ease-in-out; 
+    
+    .link {
+      color: white;
+    }
+  }
 `
 
 function AgeBar() {

@@ -32,6 +32,8 @@ const Category = styled.div`
   width: 85%;
   margin: 1%;
 
+  border-radius: 15px;
+  box-shadow: 0px 15px 25px -4px rgba(30,30,60,0.25);
   /* border: 1px solid green; */
 
   img {
@@ -82,10 +84,6 @@ function AgeContent() {
         <Category>
           <img src="https://picsum.photos/75" alt="Sleep" />
           <button>Sleep</button>
-        </Category>
-        <Category>
-          <img src="https://picsum.photos/75" alt="Shots" />
-          <button>Shots</button>
         </Category>
 
         <Separator />
