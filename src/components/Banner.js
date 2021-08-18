@@ -1,6 +1,8 @@
 import { NavLink } from "react-router-dom"
 
 import styled from "styled-components"
+import homeIcon from "../images/wc-home.png"
+import hamb from "../images/hamb.png"
 
 const BannerContainer = styled.div`
   display: flex;
@@ -12,6 +14,11 @@ const BannerContainer = styled.div`
   padding: 1%;
 
   /* border: 1px solid red; */
+
+  .link {
+    width: 6%;
+    margin: 2%;
+  }
 `
 
 const Title = styled.h1`
@@ -23,9 +30,13 @@ const Title = styled.h1`
 function Banner() {
   return (
     <BannerContainer>
-      <NavLink to="/" className="link">-HOME-</NavLink> 
+      <NavLink to="/" className="link">
+        <img src={homeIcon} alt="home" />
+      </NavLink> 
       <Title>WeLL ChiLD</Title>
-      <NavLink to="/" className="link">-HAMB-</NavLink>
+      <NavLink to="/" className="link">
+        <img src={hamb} alt="menu" />
+      </NavLink>
     </BannerContainer>
   )
 }

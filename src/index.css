@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Skranji:wght@400;700&display=swap');
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -49,15 +49,18 @@ table {
 	border-spacing: 0;
 }
 
-/* Overall styling */
+/* Global styling */
 * {
-  /* border: 1px solid black; */
-	font-family: 'Gloria Hallelujah', cursive;
 	max-width: 100%;
 	box-sizing: border-box;
+	color: #2f2f2f;
 }
 
 /* Font styling */
+
+/* font-family: 'Skranji', cursive; */
+/* font-family: 'Luckiest Guy', cursive; */
+
 h1 {
 	font-family: 'Gloria Hallelujah', cursive;
 	font-size: 4rem;
@@ -68,14 +71,26 @@ h2 {
 	font-size: 2rem;
 }
 
-.link {
-	font-family: 'Gloria Hallelujah', cursive;
+button {
+	font-family: 'Luckiest Guy', cursive;
+	font-weight: bold;
 	font-size: 1rem;
-	letter-spacing: 3px;
+	letter-spacing: 0.15rem;
+}
+
+.link {
+	font-family: 'Luckiest Guy', cursive;
 	font-weight: bolder;
+	font-size: 1rem;
+	letter-spacing: 0.25rem;
+	font-style: italic;
 	text-decoration: none;
 }
 
 #root {
-	/* background-color: blue; */
+	min-height: 100vh;
+
+	background: rgb(0,125,255);
+	background: linear-gradient(0deg, rgba(0,125,255,1) 0%, rgba(30,150,255,1) 50%, rgba(80,200,255,1) 100%);
 }
+
