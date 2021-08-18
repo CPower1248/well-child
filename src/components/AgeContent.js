@@ -22,8 +22,8 @@ const AgeContentBorder = styled.div`
   flex-flow: column;
   align-items: center;
 
-  background-color: rgba(125, 125, 125, 0.5);
-  width: 70%;
+  background-color: rgba(175, 175, 175, 0.5);
+  width: 80%;
   margin-bottom: 1%;
 
   border-radius: 15px;
@@ -44,7 +44,7 @@ const CategoryContainer = styled.div`
 const Category = styled.div`
   display: flex;
 
-  width: 85%;
+  width: 95%;
   margin: 1%;
 
   border-radius: 15px;

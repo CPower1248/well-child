@@ -5,26 +5,41 @@ const CarouselContainer = styled.div`
   justify-content: center;
   align-items: center;
 
-  width: 100%;
+  width: 80%;
   height: auto;
 
   /* border: 1px solid red; */
-
-  img {
-    margin: 2%;
-
-    border-radius: 50%;
-    box-shadow: 0px 15px 25px -4px rgba(30,30,60,0.5);
-    border: 1px solid black;
-  }
 `
+
+const ImgMain = styled.img`
+  max-width: 300px;
+  width: 50%;
+  height: auto;
+  margin: 2%;
+
+  border-radius: 50%;
+  box-shadow: 0px 15px 25px -4px rgba(30,30,60,0.5);
+  border: 1px solid black;
+`
+
+const ImgSec = styled.img`
+  max-width: 150px;
+  width: 20%;
+  height: auto;
+  margin: 2%;
+
+  border-radius: 50%;
+  box-shadow: 0px 15px 25px -4px rgba(30,30,60,0.5);
+  border: 1px solid black;
+`
+
 
 function Carousel() {
   return (
     <CarouselContainer>
-      <img src="https://picsum.photos/200" alt="Previous Profile" />
-      <img src="https://picsum.photos/400" alt="Current Profile" />
-      <img src="https://picsum.photos/200" alt="Next Profile" />
+      <ImgSec src="https://picsum.photos/200" alt="Previous Profile" />
+      <ImgMain src="https://picsum.photos/400" alt="Current Profile" />
+      <ImgSec src="https://picsum.photos/200" alt="Next Profile" />
     </CarouselContainer>
   )
 }

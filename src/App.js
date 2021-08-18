@@ -15,9 +15,11 @@ function App({ carousel }) {
   const AppWrapper = styled.div`
   display: flex;
   flex-flow: column;
+  align-items: center;
   justify-content: ${pathname === "/" ? "space-between" : "start"};
 
   width: 100%;
+  min-height: 100vh;
 
   /* border: 1px solid red; */
 `
