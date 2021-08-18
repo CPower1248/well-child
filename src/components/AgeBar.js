@@ -25,82 +25,68 @@ const AgeButtonContainer = styled.div`
 `
 
 const AgeButtonStart = styled.button`
+  background-color: rgb(255, 255, 125);
   width: 15%;
 
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
-  border-top: 5px double black;
-  border-bottom: 5px double black;
+  border-top: 7px double #2f2f2f;
+  border-bottom: 7px double #2f2f2f;
 
   box-shadow: 0px 15px 25px -4px rgba(30,30,60,0.25);
   transition: all 0.5s ease-in-out; 
 
   &:hover {
-    background-color: black;
-
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
-    border-top: 5px double white;
-    border-bottom: 5px double white;
+    border-top: 2px solid #2f2f2f;
+    border-bottom: 2px solid #2f2f2f;
 
     transform: scale(1.1);
     transition: all 0.5s ease-in-out; 
-    
-    .link {
-      color: white;
-    }
   }
 `
 
 const AgeButton = styled.button`
+  background-color: rgb(255, 255, 125);
   width: 15%;
+
   border-radius: 0%;
-  border-top: 5px double black;
-  border-bottom: 5px double black;
+  border-top: 7px double #2f2f2f;
+  border-bottom: 7px double #2f2f2f;
 
   box-shadow: 0px 15px 25px -4px rgba(30,30,60,0.25);
   transition: all 0.5s ease-in-out; 
 
   &:hover {
-    background-color: black;
-
-    border-top: 5px double white;
-    border-bottom: 5px double white;
+    border-top: 2px solid #2f2f2f;
+    border-bottom: 2px solid #2f2f2f;
 
     transform: scale(1.1);
     transition: all 0.5s ease-in-out; 
-    
-    .link {
-      color: white;
-    }
   }
 `
 
 const AgeButtonEnd = styled.button`
+  background-color: rgb(255, 255, 125);
   width: 15%;
 
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
-  border-top: 5px double black;
-  border-bottom: 5px double black;
+  border-top: 7px double #2f2f2f;
+  border-bottom: 7px double #2f2f2f;
 
   box-shadow: 0px 15px 25px -4px rgba(30,30,60,0.25);
   transition: all 0.5s ease-in-out; 
 
   &:hover {
-    background-color: black;
-
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
-    border-top: 5px double white;
-    border-bottom: 5px double white;
+    border-top: 2px solid #2f2f2f;
+    border-bottom: 2px solid #2f2f2f;
 
     transform: scale(1.1);
     transition: all 0.5s ease-in-out; 
-    
-    .link {
-      color: white;
-    }
   }
 `
 

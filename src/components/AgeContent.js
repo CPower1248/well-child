@@ -10,10 +10,25 @@ const AgeContentContainer = styled.div`
   /* border: 1px solid red; */
 
   h2 {
+    color: #1f1f1f;
     margin: 2%;
 
     text-decoration: underline;
   }
+`
+
+const AgeContentBorder = styled.div`
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+
+  background-color: rgba(125, 125, 125, 0.5);
+  width: 70%;
+  margin-bottom: 1%;
+
+  border-radius: 15px;
+  border: 5px double #2f2f2f;
+  box-shadow: 0px 15px 25px -4px rgba(30,30,60,0.25);
 `
 
 const CategoryContainer = styled.div`
@@ -63,36 +78,38 @@ const Separator = styled.div`
 function AgeContent() {
   return (
     <AgeContentContainer>
-      <h2>Growth and Development</h2>
-      <CategoryContainer>
-        <Category>
-          <img src="https://picsum.photos/75" alt="Movement" />
-          <button>Movement</button>
-        </Category>
-        <Category>
-          <img src="https://picsum.photos/75" alt="Hearing, Seeing and Talking" />
-          <button>Hearing, Seeing and Talking</button>
-        </Category>
-        <Category>
-          <img src="https://picsum.photos/75" alt="Feelings and Behavior" />
-          <button>Feelings and Behavior</button>
-        </Category>
-        <Category>
-          <img src="https://picsum.photos/75" alt="Feeding" />
-          <button>Feeding</button>
-        </Category>
-        <Category>
-          <img src="https://picsum.photos/75" alt="Sleep" />
-          <button>Sleep</button>
-        </Category>
+      <AgeContentBorder>
+        <h2>Growth and Development</h2>
+        <CategoryContainer>
+          <Category>
+            <img src="https://picsum.photos/75" alt="Movement" />
+            <button>Movement</button>
+          </Category>
+          <Category>
+            <img src="https://picsum.photos/75" alt="Hearing, Seeing and Talking" />
+            <button>Hearing, Seeing and Talking</button>
+          </Category>
+          <Category>
+            <img src="https://picsum.photos/75" alt="Feelings and Behavior" />
+            <button>Feelings and Behavior</button>
+          </Category>
+          <Category>
+            <img src="https://picsum.photos/75" alt="Feeding" />
+            <button>Feeding</button>
+          </Category>
+          <Category>
+            <img src="https://picsum.photos/75" alt="Sleep" />
+            <button>Sleep</button>
+          </Category>
 
-        <Separator />
+          <Separator />
 
-        <Category>
-          <img src="https://picsum.photos/75" alt="Help for parents" />
-          <button>Help for parents</button>
-        </Category>
-      </CategoryContainer>
+          <Category>
+            <img src="https://picsum.photos/75" alt="Help for parents" />
+            <button>Help for parents</button>
+          </Category>
+        </CategoryContainer>
+      </AgeContentBorder>
     </AgeContentContainer>
   )
 }
