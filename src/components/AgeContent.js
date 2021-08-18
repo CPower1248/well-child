@@ -10,6 +10,7 @@ const AgeContentContainer = styled.div`
   /* border: 1px solid red; */
 
   h2 {
+    font-family: 'Luckiest Guy', cursive;
     color: #1f1f1f;
     margin: 2%;
 
@@ -22,7 +23,7 @@ const AgeContentBorder = styled.div`
   flex-flow: column;
   align-items: center;
 
-  background-color: rgba(175, 175, 175, 0.5);
+  background-color: rgba(255, 255, 255, 0.3);
   width: 80%;
   margin-bottom: 1%;
 
