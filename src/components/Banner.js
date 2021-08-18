@@ -16,7 +16,8 @@ const BannerContainer = styled.div`
   /* border: 1px solid red; */
 
   .link {
-    width: 6%;
+    min-width: 40px;
+    width: 5%;
     margin: 2%;
   }
 `
