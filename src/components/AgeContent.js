@@ -62,6 +62,7 @@ const Category = styled.div`
   }
 
   button {
+    background-color: rgb(255, 255, 150);
     font-size: 1.5rem;
     
     width: 100%;

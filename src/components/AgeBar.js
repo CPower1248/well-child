@@ -25,7 +25,7 @@ const AgeButtonContainer = styled.div`
 `
 
 const AgeButtonStart = styled.button`
-  background-color: rgb(255, 255, 100);
+  background-color: rgb(255, 255, 50);
   width: 18%;
   height: 10vh;
 
@@ -49,7 +49,7 @@ const AgeButtonStart = styled.button`
 `
 
 const AgeButton = styled.button`
-  background-color: rgb(255, 255, 100);
+  background-color: rgb(255, 255, 50);
   width: 18%;
 
   border-radius: 0%;
@@ -69,7 +69,7 @@ const AgeButton = styled.button`
 `
 
 const AgeButtonEnd = styled.button`
-  background-color: rgb(255, 255, 100);
+  background-color: rgb(255, 255, 50);
   width: 18%;
 
   border-top-right-radius: 20px;
