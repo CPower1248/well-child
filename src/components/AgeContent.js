@@ -1,3 +1,5 @@
+import { useParams } from "react-router-dom"
+
 import styled from "styled-components"
 
 const AgeContentContainer = styled.div`
@@ -62,7 +64,6 @@ const Category = styled.div`
   }
 
   button {
-    background-color: rgb(255, 255, 150);
     font-size: 1.5rem;
     
     width: 100%;
@@ -78,6 +79,10 @@ const Separator = styled.div`
 `
 
 function AgeContent() {
+  const { id } = useParams()
+
+
+  
   return (
     <AgeContentContainer>
       <AgeContentBorder>

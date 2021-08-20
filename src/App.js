@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Switch, useLocation } from "react-router-dom"
+import { Switch, Route, useLocation } from "react-router-dom"
 import { connect } from "react-redux"
 
 import Banner from "./components/Banner"
@@ -35,7 +35,9 @@ function App({ carousel }) {
       <AgeBar path="/" />
 
       <Switch>
-        <AgeContent path="/ageContent" />
+        <Route path={"/ageContent/:id"} >
+          <AgeContent />
+        </Route>
       </Switch>
       
     </AppWrapper>
