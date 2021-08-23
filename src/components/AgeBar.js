@@ -12,6 +12,10 @@ const AgeBarContainer = styled.div`
   padding: 1%;
 
   /* border: 1px solid red; */
+
+  h2 {
+    margin-bottom: 2%;
+  }
 `
 
 const AgeButtonContainer = styled.div`
