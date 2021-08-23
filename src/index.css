@@ -78,6 +78,15 @@ button {
 	letter-spacing: 0.15rem;
 }
 
+label {
+	font-family: 'Luckiest Guy', cursive;
+	font-size: 1.3rem;
+	letter-spacing: 0.08rem;
+	line-height: 1.5rem;
+
+	margin-left: 2%;
+}
+
 .link {
 	font-family: 'Luckiest Guy', cursive;
 	font-weight: bolder;

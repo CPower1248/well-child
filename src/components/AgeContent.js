@@ -1,6 +1,7 @@
 import { useParams } from "react-router-dom"
 
 import styled from "styled-components"
+import CategoryContent from "./CategoryContent"
 
 const AgeContentContainer = styled.div`
   display: flex;
@@ -80,8 +81,7 @@ const Separator = styled.div`
 
 function AgeContent() {
   const { id } = useParams()
-
-
+  console.log(id)
   
   return (
     <AgeContentContainer>
@@ -89,24 +89,22 @@ function AgeContent() {
         <h2>Growth and Development</h2>
         <CategoryContainer>
           <Category>
-            <img src="https://picsum.photos/75" alt="Movement" />
-            <button>Movement</button>
+            <img src="https://picsum.photos/75" alt="Social and Emotional" />
+            <button>Social and Emotional</button>
+          </Category>
+          <CategoryContent />
+
+          <Category>
+            <img src="https://picsum.photos/75" alt="Language and Communication" />
+            <button>Language and Communication</button>
           </Category>
           <Category>
-            <img src="https://picsum.photos/75" alt="Hearing, Seeing and Talking" />
-            <button>Hearing, Seeing and Talking</button>
+            <img src="https://picsum.photos/75" alt="Cognitive (Learning, Thinking, Problem-Solving)" />
+            <button>Cognitive (Learning, Thinking, Problem-solving)</button>
           </Category>
           <Category>
-            <img src="https://picsum.photos/75" alt="Feelings and Behavior" />
-            <button>Feelings and Behavior</button>
-          </Category>
-          <Category>
-            <img src="https://picsum.photos/75" alt="Feeding" />
-            <button>Feeding</button>
-          </Category>
-          <Category>
-            <img src="https://picsum.photos/75" alt="Sleep" />
-            <button>Sleep</button>
+            <img src="https://picsum.photos/75" alt="Movement and Physical Development" />
+            <button>Movement and Physical Development</button>
           </Category>
 
           <Separator />
