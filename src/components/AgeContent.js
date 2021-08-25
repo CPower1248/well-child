@@ -107,6 +107,7 @@ function AgeContent() {
             <button>Movement and Physical Development</button>
           </Category>
 
+{/* Fix Separator styling */}
           <Separator />
 
           <Category>
