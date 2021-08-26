@@ -33,6 +33,15 @@ const AgeContentBorder = styled.div`
   border-radius: 15px;
   border: 5px double #2f2f2f;
   box-shadow: 0px 15px 25px -4px rgba(30,30,60,0.25);
+
+  h3 {
+    font-family: "Gloria Hallelujah";
+    font-size: 2rem;
+    text-decoration: underline;
+    font-weight: bold;
+
+    margin: 1%;
+  }
 `
 
 const CategoryContainer = styled.div`
@@ -56,7 +65,7 @@ const Category = styled.div`
   /* border: 1px solid green; */
 
   img {
-    width: 13vw;
+    width: 15vw;
     height: auto;
 
     border-top-left-radius: 15px;
@@ -65,7 +74,9 @@ const Category = styled.div`
   }
 
   button {
-    font-size: 1.5rem;
+    font-family: "Klee One";
+    font-weight: bold;
+    font-size: 2rem;
     
     width: 100%;
 
@@ -86,7 +97,7 @@ function AgeContent() {
   return (
     <AgeContentContainer>
       <AgeContentBorder>
-        <h2>Growth and Development</h2>
+        <h3>Growth and Development</h3>
         <CategoryContainer>
           <Category>
             <img src="https://picsum.photos/75" alt="Social and Emotional" />
@@ -98,10 +109,12 @@ function AgeContent() {
             <img src="https://picsum.photos/75" alt="Language and Communication" />
             <button>Language and Communication</button>
           </Category>
+
           <Category>
             <img src="https://picsum.photos/75" alt="Cognitive (Learning, Thinking, Problem-Solving)" />
             <button>Cognitive (Learning, Thinking, Problem-solving)</button>
           </Category>
+
           <Category>
             <img src="https://picsum.photos/75" alt="Movement and Physical Development" />
             <button>Movement and Physical Development</button>

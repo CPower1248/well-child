@@ -14,6 +14,8 @@ const AgeBarContainer = styled.div`
   /* border: 1px solid red; */
 
   h2 {
+    font-family: 'Gloria Hallelujah';
+    font-size: 2.5rem;
     margin-bottom: 2%;
   }
 `
@@ -29,9 +31,8 @@ const AgeButtonContainer = styled.div`
 `
 
 const AgeButtonStart = styled.button`
-  background-color: rgb(255, 255, 50);
+  background-color: rgb(200, 200, 50);
   width: 18%;
-  height: 10vh;
 
   border-top-left-radius: 20px;
   border-bottom-left-radius: 20px;
@@ -53,7 +54,7 @@ const AgeButtonStart = styled.button`
 `
 
 const AgeButton = styled.button`
-  background-color: rgb(255, 255, 50);
+  background-color: rgb(200, 200, 50);
   width: 18%;
 
   border-radius: 0%;
@@ -73,7 +74,7 @@ const AgeButton = styled.button`
 `
 
 const AgeButtonEnd = styled.button`
-  background-color: rgb(255, 255, 50);
+  background-color: rgb(200, 200, 50);
   width: 18%;
 
   border-top-right-radius: 20px;

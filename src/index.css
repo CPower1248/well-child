@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Skranji:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Rampart+One&family=Klee+One:wght@400;700&display=swap');
 
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -53,47 +53,20 @@ table {
 * {
 	max-width: 100%;
 	box-sizing: border-box;
-	color: #2f2f2f;
+	color: #1f1f1f;
 }
 
 /* Font styling */
 
-/* font-family: 'Skranji', cursive; */
-/* font-family: 'Luckiest Guy', cursive; */
-
-h1 {
-	font-family: 'Gloria Hallelujah', cursive;
-	font-size: 4rem;
-}
-
-h2 {
-	font-family: 'Gloria Hallelujah', cursive;
-	font-size: 2rem;
-}
-
-button {
-	font-family: 'Luckiest Guy', cursive;
-	font-weight: bold;
-	font-size: 1rem;
-	letter-spacing: 0.15rem;
-}
-
-label {
-	font-family: 'Luckiest Guy', cursive;
-	font-size: 1.3rem;
-	letter-spacing: 0.08rem;
-	line-height: 1.5rem;
-
-	margin-left: 2%;
-}
+/* font-family: 'Gloria Hallelujah'; */
+/* font-family: 'Rampart One'; */
 
 .link {
-	font-family: 'Luckiest Guy', cursive;
-	font-weight: bolder;
-	font-size: 1rem;
-	letter-spacing: 0.25rem;
-	font-style: italic;
+	font-family: 'Klee One';
+	font-weight: bold;
+	font-size: 1.25rem;
 	text-decoration: none;
+	letter-spacing: 0.2rem;
 }
 
 #root {

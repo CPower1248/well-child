@@ -23,9 +23,9 @@ const BannerContainer = styled.div`
 `
 
 const Title = styled.h1`
-  line-height: 5rem;
-  letter-spacing: 10px;
+  font-family: 'Gloria Hallelujah';
   font-weight: bolder;
+  font-size: 5rem;
 `
 
 function Banner() {
