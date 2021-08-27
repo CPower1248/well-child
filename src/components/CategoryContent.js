@@ -1,3 +1,5 @@
+import { useParams } from "react-router-dom"
+
 import styled from "styled-components"
 
 const CategoryContentContainer = styled.div`
@@ -30,6 +32,8 @@ const CategoryContentButton = styled.div`
 `
 
 function CategoryContent() {
+  // const { id } = useParams()
+
   return (
     <CategoryContentContainer>
       <CategoryContentButton>

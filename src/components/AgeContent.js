@@ -90,10 +90,9 @@ const Separator = styled.div`
   border: 7px dotted black;
 `
 
-function AgeContent() {
-  const { id } = useParams()
-  console.log(id)
-  
+function AgeContent() {  
+  // const { id } = useParams()
+
   return (
     <AgeContentContainer>
       <AgeContentBorder>

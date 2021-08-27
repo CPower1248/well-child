@@ -32,7 +32,7 @@ function Banner() {
   return (
     <BannerContainer>
       <NavLink to="/" className="link">
-        <img src={homeIcon} alt="home" />
+        <img src={homeIcon} alt="home" classname="homeButton" />
       </NavLink> 
       <Title>WeLL ChiLD</Title>
       <NavLink to="/" className="link">

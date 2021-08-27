@@ -1,5 +1,5 @@
 import styled from "styled-components"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 
 const AgeBarContainer = styled.div`
   display: flex;
@@ -28,6 +28,31 @@ const AgeButtonContainer = styled.div`
   margin: 1%;
 
   /* border: 1px solid blue; */
+
+  .activeStart {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-top: 2px solid #2f2f2f;
+    border-bottom: 2px solid #2f2f2f;
+
+    transform: scale(1.1);
+  }
+
+  .active {
+    border-top: 2px solid #2f2f2f;
+    border-bottom: 2px solid #2f2f2f;
+
+    transform: scale(1.1);
+  }
+
+  .activeEnd {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top: 2px solid #2f2f2f;
+    border-bottom: 2px solid #2f2f2f;
+
+    transform: scale(1.1);
+  }
 `
 
 const AgeButtonStart = styled.button`
@@ -97,23 +122,25 @@ const AgeButtonEnd = styled.button`
 `
 
 function AgeBar() {
+  const { pathname } = useLocation()
+
   return (
     <AgeBarContainer>
       <h2>How old are you?</h2>
       <AgeButtonContainer>
-        <AgeButtonStart>
+        <AgeButtonStart className={(pathname === "/ageContent/1" ? 'activeStart' : '')}>
           <Link to="/ageContent/1" className="link">1 YEAR</Link>
         </AgeButtonStart>
-        <AgeButton>
+        <AgeButton className={(pathname === "/ageContent/2" ? 'active' : '')}>
           <Link to="/ageContent/2" className="link">2 YEARS</Link>
         </AgeButton>
-        <AgeButton>
+        <AgeButton className={(pathname === "/ageContent/3" ? 'active' : '')}>
           <Link to="/ageContent/3" className="link">3 YEARS</Link>
         </AgeButton>
-        <AgeButton>
+        <AgeButton className={(pathname === "/ageContent/4" ? 'active' : '')}>
           <Link to="/ageContent/4" className="link">4 YEARS</Link>
         </AgeButton>
-        <AgeButtonEnd>
+        <AgeButtonEnd className={(pathname === "/ageContent/5" ? 'activeEnd' : '')}>
           <Link to="/ageContent/5" className="link">5 YEARS</Link>
         </AgeButtonEnd>
       </AgeButtonContainer>
