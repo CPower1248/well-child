@@ -147,19 +147,19 @@ function AgeBar() {
     <AgeBarContainer>
       <h2>How old are you?</h2>
       <AgeButtonContainer>
-        <AgeButtonStart className={(pathname === "/ageContent/1" ? 'activeStart' : '')}>
+        <AgeButtonStart className={(pathname.slice(0, 13) === "/ageContent/1" ? 'activeStart' : '')}>
           <Link to="/ageContent/1" className="link fullwidth">1 YEAR</Link>
         </AgeButtonStart>
-        <AgeButton className={(pathname === "/ageContent/2" ? 'active' : '')}>
+        <AgeButton className={(pathname.slice(0, 13) === "/ageContent/2" ? 'active' : '')}>
           <Link to="/ageContent/2" className="link fullwidth">2 YEARS</Link>
         </AgeButton>
-        <AgeButton className={(pathname === "/ageContent/3" ? 'active' : '')}>
+        <AgeButton className={(pathname.slice(0, 13) === "/ageContent/3" ? 'active' : '')}>
           <Link to="/ageContent/3" className="link fullwidth">3 YEARS</Link>
         </AgeButton>
-        <AgeButton className={(pathname === "/ageContent/4" ? 'active' : '')}>
+        <AgeButton className={(pathname.slice(0, 13) === "/ageContent/4" ? 'active' : '')}>
           <Link to="/ageContent/4" className="link fullwidth">4 YEARS</Link>
         </AgeButton>
-        <AgeButtonEnd className={(pathname === "/ageContent/5" ? 'activeEnd' : '')}>
+        <AgeButtonEnd className={(pathname.slice(0, 13) === "/ageContent/5" ? 'activeEnd' : '')}>
           <Link to="/ageContent/5" className="link fullwidth">5 YEARS</Link>
         </AgeButtonEnd>
       </AgeButtonContainer>
