@@ -29,6 +29,25 @@ const AgeButtonContainer = styled.div`
 
   /* border: 1px solid blue; */
 
+  .link {
+    font-family: 'Klee One';
+    font-weight: bold;
+    font-size: 1.25rem;
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+    line-height: 2rem;
+  }
+
+  .fullwidth {
+    width:100%;
+    margin-left:0;
+    margin-right:0;
+    padding-left:0;
+    padding-right:0;
+    display:block;
+    text-align:center;
+  }
+
   .activeStart {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -129,19 +148,19 @@ function AgeBar() {
       <h2>How old are you?</h2>
       <AgeButtonContainer>
         <AgeButtonStart className={(pathname === "/ageContent/1" ? 'activeStart' : '')}>
-          <Link to="/ageContent/1" className="link">1 YEAR</Link>
+          <Link to="/ageContent/1" className="link fullwidth">1 YEAR</Link>
         </AgeButtonStart>
         <AgeButton className={(pathname === "/ageContent/2" ? 'active' : '')}>
-          <Link to="/ageContent/2" className="link">2 YEARS</Link>
+          <Link to="/ageContent/2" className="link fullwidth">2 YEARS</Link>
         </AgeButton>
         <AgeButton className={(pathname === "/ageContent/3" ? 'active' : '')}>
-          <Link to="/ageContent/3" className="link">3 YEARS</Link>
+          <Link to="/ageContent/3" className="link fullwidth">3 YEARS</Link>
         </AgeButton>
         <AgeButton className={(pathname === "/ageContent/4" ? 'active' : '')}>
-          <Link to="/ageContent/4" className="link">4 YEARS</Link>
+          <Link to="/ageContent/4" className="link fullwidth">4 YEARS</Link>
         </AgeButton>
         <AgeButtonEnd className={(pathname === "/ageContent/5" ? 'activeEnd' : '')}>
-          <Link to="/ageContent/5" className="link">5 YEARS</Link>
+          <Link to="/ageContent/5" className="link fullwidth">5 YEARS</Link>
         </AgeButtonEnd>
       </AgeButtonContainer>
     </AgeBarContainer>
