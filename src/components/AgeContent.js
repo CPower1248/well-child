@@ -41,6 +41,8 @@ const CategoryContainer = styled.div`
   flex-flow: column;
   align-items: center;
 
+  text-align: center;
+
   width: 85%;
 
   /* border: 1px solid blue; */
