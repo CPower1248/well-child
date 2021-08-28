@@ -7,7 +7,7 @@ const CategoryContentContainer = styled.div`
   flex-flow: column;
   justify-content: center;
 
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
   width: 80%;
 
   border-radius: 15px;
@@ -17,6 +17,8 @@ const CategoryContentContainer = styled.div`
 
 const CategoryContentButton = styled.div`
   display: flex;
+
+  text-align: start;
 
   margin: 2%;
   margin-bottom: 3%;

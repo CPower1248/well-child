@@ -18,7 +18,7 @@ const AgeContentBorder = styled.div`
   flex-flow: column;
   align-items: center;
 
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.25);
   width: 80%;
   margin-bottom: 1%;
 
@@ -53,7 +53,7 @@ const Category = styled.div`
 
   width: 100%;
   margin: 1%;
-  background-color: whitesmoke;
+  background-color: lavenderblush;
 
   border-radius: 15px;
   box-shadow: 0px 15px 25px -4px rgba(30,30,60,0.25);
@@ -76,7 +76,6 @@ const Category = styled.div`
     font-family: "Klee One";
     font-size: 2rem;
     text-decoration: none;
-    text-align: center;
 
     width: 100%;
 
@@ -110,16 +109,19 @@ function AgeContent() {
             <img src="https://picsum.photos/75" alt="Language and Communication" />
             <Link to={"/ageContent/" + id +"/LC"} className="categoryLink">Language and Communication</Link>
           </Category>
+          <Route path={"/ageContent/" + id + "/LC"} component={CategoryContent} />
 
           <Category>
             <img src="https://picsum.photos/75" alt="Cognitive (Learning, Thinking, Problem-Solving)" />
             <Link to={"/ageContent/" + id + "/C"} className="categoryLink">Cognitive (Learning, Thinking, Problem-solving)</Link>
           </Category>
+          <Route path={"/ageContent/" + id + "/C"} component={CategoryContent} />
 
           <Category>
             <img src="https://picsum.photos/75" alt="Movement and Physical Development" />
             <Link to={"/ageContent/" + id + "/MP"} className="categoryLink">Movement and Physical Development</Link>
           </Category>
+          <Route path={"/ageContent/" + id + "/MP"} component={CategoryContent} />
 
           <Separator />
 
@@ -127,6 +129,7 @@ function AgeContent() {
             <img src="https://picsum.photos/75" alt="Help for parents" />
             <Link to={"/ageContent/" + id + "/H"} className="categoryLink">Help for parents</Link>
           </Category>
+          <Route path={"/ageContent/" + id + "/H"} component={CategoryContent} />
         </CategoryContainer>
       </AgeContentBorder>
     </AgeContentContainer>
