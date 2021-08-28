@@ -38,16 +38,6 @@ const AgeButtonContainer = styled.div`
     line-height: 2rem;
   }
 
-  .fullwidth {
-    width:100%;
-    margin-left:0;
-    margin-right:0;
-    padding-left:0;
-    padding-right:0;
-    display:block;
-    text-align:center;
-  }
-
   .activeStart {
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;

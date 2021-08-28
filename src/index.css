@@ -61,9 +61,18 @@ table {
 /* font-family: 'Gloria Hallelujah'; */
 /* font-family: 'Rampart One'; */
 
+.fullwidth {
+	width:100%;
+	margin-left:0;
+	margin-right:0;
+	padding-left:0;
+	padding-right:0;
+	display:block;
+	text-align:center;
+}
+
 #root {
 	min-height: 100vh;
 
 	background: linear-gradient(0deg, rgba(100, 200, 255, 1) 0%, rgba(0, 100, 255, 1) 50%, rgba(100, 200, 255, 1) 100%);
 }
-

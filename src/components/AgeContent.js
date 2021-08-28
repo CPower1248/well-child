@@ -1,4 +1,4 @@
-// import { useParams } from "react-router-dom"
+import { Route, Link, useParams } from "react-router-dom"
 
 import styled from "styled-components"
 import CategoryContent from "./CategoryContent"
@@ -11,14 +11,6 @@ const AgeContentContainer = styled.div`
   width: 100%;
 
   /* border: 1px solid red; */
-
-  h2 {
-    font-family: 'Luckiest Guy', cursive;
-    color: #1f1f1f;
-    margin: 2%;
-
-    text-decoration: underline;
-  }
 `
 
 const AgeContentBorder = styled.div`
@@ -36,7 +28,7 @@ const AgeContentBorder = styled.div`
 
   h3 {
     font-family: "Gloria Hallelujah";
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-decoration: underline;
     font-weight: bold;
 
@@ -57,8 +49,9 @@ const CategoryContainer = styled.div`
 const Category = styled.div`
   display: flex;
 
-  width: 95%;
+  width: 100%;
   margin: 1%;
+  background-color: whitesmoke;
 
   border-radius: 15px;
   box-shadow: 0px 15px 25px -4px rgba(30,30,60,0.25);
@@ -73,13 +66,20 @@ const Category = styled.div`
     border: 2px solid black;
   }
 
-  button {
+  .categoryLink {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     font-family: "Klee One";
-    font-weight: bold;
     font-size: 2rem;
-    
+    text-decoration: none;
+    text-align: center;
+
     width: 100%;
 
+    border-top: 7px double #2f2f2f;
+    border-bottom: 7px double #2f2f2f;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
   }
@@ -91,40 +91,40 @@ const Separator = styled.div`
 `
 
 function AgeContent() {  
-  // const { id } = useParams()
+  const { id } = useParams()
+  console.log("AGECONTENT ID: ", id)
 
   return (
     <AgeContentContainer>
       <AgeContentBorder>
-        <h3>Growth and Development</h3>
         <CategoryContainer>
+        <h3>Growth and Development</h3>
           <Category>
             <img src="https://picsum.photos/75" alt="Social and Emotional" />
-            <button>Social and Emotional</button>
+            <Link to={"/ageContent/" + id + "/SE"} className="categoryLink">Social and Emotional</Link>
           </Category>
-          <CategoryContent />
+          <Route path={"/ageContent/" + id + "/SE"} component={CategoryContent} />
 
           <Category>
             <img src="https://picsum.photos/75" alt="Language and Communication" />
-            <button>Language and Communication</button>
+            <Link to={"/ageContent/" + id +"/LC"} className="categoryLink">Language and Communication</Link>
           </Category>
 
           <Category>
             <img src="https://picsum.photos/75" alt="Cognitive (Learning, Thinking, Problem-Solving)" />
-            <button>Cognitive (Learning, Thinking, Problem-solving)</button>
+            <Link to={"/ageContent/" + id + "/C"} className="categoryLink">Cognitive (Learning, Thinking, Problem-solving)</Link>
           </Category>
 
           <Category>
             <img src="https://picsum.photos/75" alt="Movement and Physical Development" />
-            <button>Movement and Physical Development</button>
+            <Link to={"/ageContent/" + id + "/MP"} className="categoryLink">Movement and Physical Development</Link>
           </Category>
 
-{/* Fix Separator styling */}
           <Separator />
 
           <Category>
             <img src="https://picsum.photos/75" alt="Help for parents" />
-            <button>Help for parents</button>
+            <Link to={"/ageContent/" + id + "/H"} className="categoryLink">Help for parents</Link>
           </Category>
         </CategoryContainer>
       </AgeContentBorder>

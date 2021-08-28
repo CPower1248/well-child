@@ -35,9 +35,7 @@ function App({ carousel }) {
       <AgeBar path="/" />
 
       <Switch>
-        <Route path={"/ageContent/:id"} >
-          <AgeContent />
-        </Route>
+        <Route path={"/ageContent/:id"} component={AgeContent} />
       </Switch>
       
     </AppWrapper>
