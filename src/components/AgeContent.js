@@ -92,7 +92,6 @@ const Separator = styled.div`
 
 function AgeContent() {  
   const { id } = useParams()
-  console.log("AGECONTENT ID: ", id)
 
   return (
     <AgeContentContainer>
