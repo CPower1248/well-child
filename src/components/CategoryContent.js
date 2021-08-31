@@ -1,4 +1,4 @@
-// import { useParams } from "react-router-dom"
+import { useRef, useEffect } from "react" 
 
 import styled from "styled-components"
 
@@ -34,10 +34,16 @@ const CategoryContentButton = styled.div`
 `
 
 function CategoryContent() {
-  // const { id } = useParams()
+  const contentRef = useRef(null)
+
+  useEffect(() => {
+    if (contentRef.current) {
+      contentRef.current.scrollIntoView({behavior: "smooth"})
+    }
+  }, [])
 
   return (
-    <CategoryContentContainer>
+    <CategoryContentContainer ref={contentRef}>
       <CategoryContentButton>
         <input type="checkbox" />
         <label>Wants to please friends</label>
