@@ -102,36 +102,36 @@ function AgeContent() {
         <h3>Growth and Development</h3>
           <Category>
             <img src="https://picsum.photos/75" alt="Social and Emotional" />
-            {pathname === `/ageContent/${id}` ?
-              <Link to={"/ageContent/" + id + "/SE"} className="categoryLink">Social and Emotional</Link> :
-              <Link to={"/ageContent/" + id} className="categoryLink">Social and Emotional</Link>
+            {pathname === `/ageContent/${id}/SE` ?
+              <Link to={"/ageContent/" + id} className="categoryLink">Social and Emotional</Link> :
+              <Link to={"/ageContent/" + id + "/SE"} className="categoryLink">Social and Emotional</Link>
             }
           </Category>
           <Route path={"/ageContent/" + id + "/SE"} component={CategoryContent} />
 
           <Category>
             <img src="https://picsum.photos/75" alt="Language and Communication" />
-            {pathname === `/ageContent/${id}` ?
-              <Link to={"/ageContent/" + id +"/LC"} className="categoryLink">Language and Communication</Link> :
-              <Link to={"/ageContent/" + id} className="categoryLink">Language and Communication</Link>
+            {pathname === `/ageContent/${id}/LC` ?
+              <Link to={"/ageContent/" + id} className="categoryLink">Language and Communication</Link> :
+              <Link to={"/ageContent/" + id +"/LC"} className="categoryLink">Language and Communication</Link>
             }
           </Category>
           <Route path={"/ageContent/" + id + "/LC"} component={CategoryContent} />
 
           <Category>
             <img src="https://picsum.photos/75" alt="Cognitive (Learning, Thinking, Problem-Solving)" />
-            {pathname === `/ageContent/${id}` ?
-              <Link to={"/ageContent/" + id + "/CL"} className="categoryLink">Cognitive (Learning, Thinking, Problem-solving)</Link> :
-              <Link to={"/ageContent/" + id} className="categoryLink">Cognitive (Learning, Thinking, Problem-solving)</Link>
+            {pathname === `/ageContent/${id}/CL` ?
+              <Link to={"/ageContent/" + id} className="categoryLink">Cognitive (Learning, Thinking, Problem-solving)</Link> :
+              <Link to={"/ageContent/" + id + "/CL"} className="categoryLink">Cognitive (Learning, Thinking, Problem-solving)</Link>
             }
           </Category>
           <Route path={"/ageContent/" + id + "/CL"} component={CategoryContent} />
 
           <Category>
             <img src="https://picsum.photos/75" alt="Movement and Physical Development" />
-            {pathname === `/ageContent/${id}` ?
-              <Link to={"/ageContent/" + id + "/MP"} className="categoryLink">Movement and Physical Development</Link> :
-              <Link to={"/ageContent/" + id} className="categoryLink">Movement and Physical Development</Link>
+            {pathname === `/ageContent/${id}/MP` ?
+              <Link to={"/ageContent/" + id} className="categoryLink">Movement and Physical Development</Link> :
+              <Link to={"/ageContent/" + id + "/MP"} className="categoryLink">Movement and Physical Development</Link>
             }
           </Category>
           <Route path={"/ageContent/" + id + "/MP"} component={CategoryContent} />
@@ -140,9 +140,9 @@ function AgeContent() {
 
           <Category>
             <img src="https://picsum.photos/75" alt="Help for parents" />
-            {pathname === `/ageContent/${id}` ?
-              <Link to={"/ageContent/" + id + "/HP"} className="categoryLink">Help for parents</Link> :
-              <Link to={"/ageContent/" + id} className="categoryLink">Help for parents</Link>
+            {pathname === `/ageContent/${id}/HP` ?
+              <Link to={"/ageContent/" + id} className="categoryLink">Help for parents</Link> :
+              <Link to={"/ageContent/" + id + "/HP"} className="categoryLink">Help for parents</Link>
             }
           </Category>
           <Route path={"/ageContent/" + id + "/HP"} component={CategoryContent} />
