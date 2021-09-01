@@ -136,6 +136,7 @@ function AgeContent() {
           </Category>
           <Route path={"/ageContent/" + id + "/MP"} component={CategoryContent} />
 
+          {/* Fix Separator styling */}
           <Separator />
 
           <Category>
