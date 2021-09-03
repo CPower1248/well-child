@@ -99,7 +99,7 @@ function AgeContent() {
     <AgeContentContainer>
       <AgeContentBorder>
         <CategoryContainer>
-        <h3>Growth and Development</h3>
+        <h3>What most children do by this age:</h3>
           <Category>
             <img src="https://picsum.photos/75" alt="Social and Emotional" />
             {pathname === `/ageContent/${id}/SE` ?

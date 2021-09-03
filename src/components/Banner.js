@@ -9,6 +9,8 @@ const BannerContainer = styled.div`
   justify-content: space-between;
   align-items: center;
 
+  text-align: center;
+
   width: 100%;
   height: auto;
   padding: 1%;
@@ -19,6 +21,8 @@ const BannerContainer = styled.div`
     min-width: 40px;
     width: 5%;
     margin: 2%;
+
+    /* border: 1px solid blue; */
   }
 `
 
@@ -26,6 +30,8 @@ const Title = styled.h1`
   font-family: 'Gloria Hallelujah';
   font-weight: bolder;
   font-size: 5rem;
+
+  /* border: 1px solid green; */
 `
 
 function Banner() {
