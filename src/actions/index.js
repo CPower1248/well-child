@@ -1,8 +1,13 @@
+import { useLocation } from "react"
 import axios from "axios"
 
 export const FETCH_INITIAL_START = "FETCH_INITIAL_START"
 export const FETCH_INITIAL_SUCCESS = "FETCH_INITIAL_SUCCESS"
 export const FETCH_INITIAL_FAIL = "FETCH_INITIAL_FAIL"
+
+export const FETCH_CONTENT_START = "FETCH_CONTENT_START"
+export const FETCH_CONTENT_SUCCESS = "FETCH_CONTENT_SUCCESS"
+export const FETCH_CONTENT_FAIL = "FETCH_CONTENT_FAIL"
 
 export const getInitial = () => dispatch => {
     dispatch({type: FETCH_INITIAL_START})
@@ -13,5 +18,18 @@ export const getInitial = () => dispatch => {
         })
         .catch(err => {
             dispatch({type: FETCH_INITIAL_FAIL, payload: err.message})
+        })
+}
+
+export const getContent = (pathname) => dispatch => {
+    const { pathname } = useLocation()
+    dispatch({type: FETCH_CONTENT_START})
+
+    axios.get(`http://localhost:5000/api${pathname}`)
+        .then(res => {
+            dispatch({type: FETCH_CONTENT_SUCCESS, payload: res.data})
+        })
+        .catch(err => {
+            dispatch({type: FETCH_CONTENT_FAIL, payload: err.message})
         })
 }

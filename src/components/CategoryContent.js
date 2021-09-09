@@ -1,4 +1,7 @@
 import { useRef, useEffect } from "react" 
+import { connect } from "react-redux"
+
+import { getContent } from "../actions"
 
 import styled from "styled-components"
 
@@ -33,8 +36,13 @@ const CategoryContentButton = styled.div`
   }
 `
 
-function CategoryContent() {
+function CategoryContent(props) {
   const contentRef = useRef(null)
+  const { getContent, content } = props
+
+  useEffect(() => {
+    getContent()
+  }, [getContent])
 
   useEffect(() => {
     if (contentRef.current) {
@@ -87,4 +95,10 @@ function CategoryContent() {
   )
 }
 
-export default CategoryContent
+const mapStateToProps = state => {
+  return {
+    content: state.content
+  }
+}
+
+export default connect(mapStateToProps, { getContent })(CategoryContent)
