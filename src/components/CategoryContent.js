@@ -36,13 +36,23 @@ const CategoryContentButton = styled.div`
   }
 `
 
-function CategoryContent(props) {
+function CategoryContent({ getContent, isFetching, error, content, pathname }) {
   const contentRef = useRef(null)
-  const { getContent, content } = props
+  const exists = ["SE","LC","CL","MP","HP"].some(code => pathname.includes(code))
+  console.log("EXISTS: ", exists)
 
-  useEffect(() => {
-    getContent()
-  }, [getContent])
+  console.log("CC PATHNAME: ", pathname)
+
+    useEffect(() => {
+      if (["SE","LC","CL","MP","HP"].some(code => pathname.includes(code))) {
+        getContent(pathname)
+      }
+    }, [getContent, pathname])
+
+    console.log("ISFETCHING: ", isFetching)
+    console.log("ERROR: ", error)
+    console.log("CONTENT: ", content)
+    console.log("PATHNAME: ", pathname)
 
   useEffect(() => {
     if (contentRef.current) {
@@ -52,6 +62,7 @@ function CategoryContent(props) {
 
   return (
     <CategoryContentContainer ref={contentRef}>
+      {/* Make dynamic component for content */}
       <CategoryContentButton>
         <input type="checkbox" />
         <label>Wants to please friends</label>
@@ -97,7 +108,10 @@ function CategoryContent(props) {
 
 const mapStateToProps = state => {
   return {
-    content: state.content
+    isFetching: state.isFetching,
+    error: state.error,
+    content: state.content,
+    pathname: state.pathname
   }
 }
 

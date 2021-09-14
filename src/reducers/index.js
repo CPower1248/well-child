@@ -1,15 +1,21 @@
-import { FETCH_CONTENT_START, FETCH_CONTENT_SUCCESS, FETCH_CONTENT_FAIL } from "../actions"
+import { FETCH_GET_PATHNAME, FETCH_CONTENT_START, FETCH_CONTENT_SUCCESS, FETCH_CONTENT_FAIL } from "../actions"
 
 export const initialState = {
     isFetching: false,
     error: "",
-    content: []
+    content: [],
+    pathname: ""
 }
 
 export const reducer = (state = initialState, action) => {
     switch(action.type) {
+        case FETCH_GET_PATHNAME:
+            return ({
+                ...state,
+                pathname: action.payload
+            })
         case FETCH_CONTENT_START:
-            return({
+            return ({
                 ...state,
                 isFetching: true,
                 error: ""

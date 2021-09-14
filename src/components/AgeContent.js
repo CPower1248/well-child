@@ -1,4 +1,8 @@
+import { useEffect } from "react"
 import { Route, Link, useParams, useLocation } from "react-router-dom"
+import { connect } from "react-redux"
+
+import { getPathname } from "../actions"
 
 import styled from "styled-components"
 import CategoryContent from "./CategoryContent"
@@ -91,9 +95,14 @@ const Separator = styled.div`
   border: 7px dotted black;
 `
 
-function AgeContent() {  
+function AgeContent({ getPathname }) {  
   const { id } = useParams()
   const { pathname } = useLocation()
+  console.log("AC PATHNAME: ", pathname)
+
+  useEffect(() => {
+    getPathname(pathname)
+  }, [])
 
   return (
     <AgeContentContainer>
@@ -153,4 +162,4 @@ function AgeContent() {
   )
 }
 
-export default AgeContent
+export default connect(null, { getPathname })(AgeContent)
