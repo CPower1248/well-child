@@ -1,7 +1,9 @@
-import { useRef, useEffect } from "react" 
+import { useRef, useEffect, useState } from "react" 
 import { connect } from "react-redux"
 
 import { getContent } from "../actions"
+import sadFace from "../images/sad-face.png"
+import smileyFace from "../images/smiley-face.png"
 
 import styled from "styled-components"
 
@@ -20,6 +22,7 @@ const CategoryContentContainer = styled.div`
 
 const CategoryContentButton = styled.div`
   display: flex;
+  align-items: center;
 
   text-align: start;
 
@@ -32,11 +35,30 @@ const CategoryContentButton = styled.div`
     font-family: "Klee One";
     font-size: 2rem;
 
-    margin-left: 1%;
+    width: 80%;
+
+    /* border: 1px solid red; */
+  }
+`
+const StickerBox = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  width: 10%;
+  height: auto;
+  
+  font-family: "Gloria Hallelujah";
+
+  img {
+    border-radius: 50%;
   }
 `
 
+
 function CategoryContent({ getContent, isFetching, error, content, pathname }) {
+  const [sticker, setSticker] = useState(false)
+
   const contentRef = useRef(null)
   const exists = ["SE","LC","CL","MP","HP"].some(code => pathname.includes(code))
   console.log("EXISTS: ", exists)
@@ -60,10 +82,19 @@ function CategoryContent({ getContent, isFetching, error, content, pathname }) {
     }
   }, [])
 
+  const handleSticker = () => {
+    setSticker(!sticker)
+  }
+
   return (
     <CategoryContentContainer ref={contentRef}>
       <CategoryContentButton>
-        <input type="checkbox" />
+        <StickerBox onClick={handleSticker}>
+          {sticker ?
+            <img src={smileyFace} alt="Smiley Sticker" /> :
+            <img src={sadFace} alt="Sad Sticker" />
+          }
+        </StickerBox>
         <label>Wants to please friends</label>
       </CategoryContentButton>
 
