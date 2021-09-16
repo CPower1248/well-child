@@ -61,20 +61,12 @@ function CategoryContent({ getContent, isFetching, error, content, pathname }) {
 
   const contentRef = useRef(null)
   const exists = ["SE","LC","CL","MP","HP"].some(code => pathname.includes(code))
-  console.log("EXISTS: ", exists)
-
-  console.log("CC PATHNAME: ", pathname)
 
     useEffect(() => {
       if (["SE","LC","CL","MP","HP"].some(code => pathname.includes(code))) {
         getContent(pathname)
       }
     }, [getContent, pathname])
-
-    console.log("ISFETCHING: ", isFetching)
-    console.log("ERROR: ", error)
-    console.log("CONTENT: ", content)
-    console.log("PATHNAME: ", pathname)
 
   useEffect(() => {
     if (contentRef.current) {

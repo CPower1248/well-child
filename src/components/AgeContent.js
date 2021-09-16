@@ -98,7 +98,6 @@ const Separator = styled.div`
 function AgeContent({ getPathname }) {  
   const { id } = useParams()
   const { pathname } = useLocation()
-  console.log("AC PATHNAME: ", pathname)
 
   useEffect(() => {
     getPathname(pathname)
