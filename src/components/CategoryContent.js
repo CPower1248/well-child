@@ -62,7 +62,6 @@ function CategoryContent({ getContent, isFetching, error, content, pathname }) {
 
   return (
     <CategoryContentContainer ref={contentRef}>
-      {/* Make dynamic component for content */}
       <CategoryContentButton>
         <input type="checkbox" />
         <label>Wants to please friends</label>
