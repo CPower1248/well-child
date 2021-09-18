@@ -101,6 +101,7 @@ function AgeContent({ getPathname }) {
 
   useEffect(() => {
     getPathname(pathname)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (

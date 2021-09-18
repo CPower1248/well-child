@@ -1,4 +1,4 @@
-import { useRef, useEffect, useState } from "react" 
+import { useRef, useEffect } from "react" 
 import { connect } from "react-redux"
 
 import { getContent } from "../actions"
