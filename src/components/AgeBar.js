@@ -65,7 +65,7 @@ const AgeButtonContainer = styled.div`
 `
 
 const AgeButtonStart = styled.button`
-  background-color: rgb(200, 200, 50);
+  background-color: rgba(254,242,0, 0.75);
   width: 18%;
 
   border-top-left-radius: 20px;
@@ -77,6 +77,8 @@ const AgeButtonStart = styled.button`
   transition: all 0.5s ease-in-out; 
 
   &:hover {
+    background-color: rgba(254,242,0, 1);
+
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     border-top: 2px solid #2f2f2f;
@@ -88,7 +90,7 @@ const AgeButtonStart = styled.button`
 `
 
 const AgeButton = styled.button`
-  background-color: rgb(200, 200, 50);
+  background-color: rgba(254,242,0, 0.75);
   width: 18%;
 
   border-radius: 0%;
@@ -99,6 +101,8 @@ const AgeButton = styled.button`
   transition: all 0.5s ease-in-out; 
 
   &:hover {
+    background-color: rgba(254,242,0, 1);
+
     border-top: 2px solid #2f2f2f;
     border-bottom: 2px solid #2f2f2f;
 
@@ -108,7 +112,7 @@ const AgeButton = styled.button`
 `
 
 const AgeButtonEnd = styled.button`
-  background-color: rgb(200, 200, 50);
+  background-color: rgba(254,242,0, 0.75);
   width: 18%;
 
   border-top-right-radius: 20px;
@@ -120,6 +124,8 @@ const AgeButtonEnd = styled.button`
   transition: all 0.5s ease-in-out; 
 
   &:hover {
+    background-color: rgba(254,242,0, 1);
+    
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     border-top: 2px solid #2f2f2f;
