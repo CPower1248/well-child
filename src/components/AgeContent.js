@@ -23,7 +23,7 @@ const AgeContentBorder = styled.div`
   align-items: center;
 
   background-color: rgba(255, 255, 255, 0.25);
-  width: 80%;
+  width: 90%;
   margin-bottom: 1%;
 
   border-radius: 15px;
@@ -47,7 +47,7 @@ const CategoryContainer = styled.div`
 
   text-align: center;
 
-  width: 85%;
+  width: 90%;
 
   /* border: 1px solid blue; */
 `
