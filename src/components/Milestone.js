@@ -52,6 +52,8 @@ function Milestone({ milestone }) {
   const [sticker, setSticker] = useState(false)
 
   const handleSticker = () => {
+    // Add persistence
+
     setSticker(!sticker)
   }
 
@@ -63,7 +65,7 @@ function Milestone({ milestone }) {
           <img src={sadFace} alt="Sad Sticker" />
         }
       </StickerBox>
-      <label>{milestone.content}</label>
+      <label className="largeRes">{milestone.content}</label>
   </CategoryContentDiv>
   )
 }
