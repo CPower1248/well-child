@@ -52,7 +52,7 @@ function Milestone({ milestone }) {
   const [sticker, setSticker] = useState(false)
 
   const handleSticker = () => {
-    // Add persistence
+    // Add persistence and user on-bording
 
     setSticker(!sticker)
   }
