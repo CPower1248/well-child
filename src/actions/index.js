@@ -29,7 +29,7 @@ export const getPathname = (pathname) => dispatch => {
 export const getContent = (pathname) => dispatch => {
     dispatch({type: FETCH_CONTENT_START})
 
-    axios.get(`http://localhost:5000/api${pathname}`)
+    axios.get(`https://well-child-be.herokuapp.com/api${pathname}`)
         .then(res => {
             dispatch({type: FETCH_CONTENT_SUCCESS, payload: res.data})
         })
