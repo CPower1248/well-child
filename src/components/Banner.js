@@ -34,7 +34,6 @@ const Title = styled.h1`
   /* border: 1px solid green; */
 `
 
-// Build modal
 function Banner() {
   return (
     <BannerContainer>
