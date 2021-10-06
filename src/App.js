@@ -7,9 +7,9 @@ import Carousel from "./components/Carousel"
 import AgeBar from "./components/AgeBar"
 import AgeContent from "./components/AgeContent"
 
+import Modal from "./components/Modal"
 
-
-function App({ carousel }) {
+function App() {
   const { pathname } = useLocation()
 
   const AppWrapper = styled.div`
@@ -36,8 +36,9 @@ function App({ carousel }) {
 
       <Switch>
         <Route path={"/ageContent/:id"} component={AgeContent} />
-      </Switch>
-      
+      </Switch>  
+
+      {/* <Modal/> */}
     </AppWrapper>
   );
 }
