@@ -43,7 +43,6 @@ function App() {
   );
 }
 
-// Make state and action for modal display
 const mapStateToProps = state => {
   return {
     carousel: state.carousel
