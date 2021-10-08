@@ -1,3 +1,4 @@
+import { useRef, useEffect } from "react"
 import styled from "styled-components"
 import { connect } from "react-redux"
 
@@ -25,16 +26,24 @@ const ModalContent = styled.div`
 	background-color: rgba(0, 0, 0, 0.975);
 
 	border-radius: 15px;
-  border: 3px double cyan;
+  border: 3px double rgb(100, 200, 255);
 `
 
 function Modal({ toggleModal, modal }) {
+  const modalRef = useRef(null)
+
+  useEffect(() => {
+    if (modalRef.current) {
+      modalRef.current.scrollIntoView({behavior: "smooth"})
+    }
+  }, [])
+
   const handleToggleModal = modal => {
     toggleModal(modal)
   }
 
   return (
-    <ModalBG>
+    <ModalBG ref={modalRef}>
       <ModalContent>
         <button onClick={handleToggleModal}>close</button>
       </ModalContent>
