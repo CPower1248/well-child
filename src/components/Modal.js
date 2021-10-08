@@ -1,4 +1,7 @@
 import styled from "styled-components"
+import { connect } from "react-redux"
+
+import { toggleModal } from "../actions"
 
 const ModalBG = styled.div`
   display: flex;
@@ -25,14 +28,24 @@ const ModalContent = styled.div`
   border: 3px double cyan;
 `
 
-function Modal() {
+function Modal({ toggleModal, modal }) {
+  const handleToggleModal = modal => {
+    toggleModal(modal)
+  }
+
   return (
     <ModalBG>
       <ModalContent>
-        <button>close</button>
+        <button onClick={handleToggleModal}>close</button>
       </ModalContent>
     </ModalBG>
   )
 }
 
-export default (Modal)
+const mapStateToProps = state => {
+  return {
+    modal: state.modal
+  }
+}
+
+export default connect(mapStateToProps, { toggleModal })(Modal)
