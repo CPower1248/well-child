@@ -22,14 +22,17 @@ const ModalContent = styled.div`
 	background-color: rgba(0, 0, 0, 0.975);
 
 	border-radius: 15px;
+  border: 3px double cyan;
 `
 
 function Modal() {
   return (
     <ModalBG>
-      <ModalContent>Make modal content</ModalContent>
+      <ModalContent>
+        <button>close</button>
+      </ModalContent>
     </ModalBG>
   )
 }
 
-export default Modal
+export default (Modal)

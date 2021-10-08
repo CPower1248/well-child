@@ -1,8 +1,11 @@
 import { NavLink } from "react-router-dom"
+import { connect } from "react-redux"
 
 import styled from "styled-components"
 import homeIcon from "../images/wc-home.png"
 import hamb from "../images/hamb.png"
+
+import { toggleModal } from "../actions"
 
 const BannerContainer = styled.div`
   display: flex;
@@ -34,18 +37,30 @@ const Title = styled.h1`
   /* border: 1px solid green; */
 `
 
-function Banner() {
+function Banner({ toggleModal, modal }) {
+  const handleToggleModal = (modal) => {
+    toggleModal(!modal)
+  }
+
   return (
     <BannerContainer>
       <NavLink to="/" className="link">
         <img src={homeIcon} alt="home" className="homeButton" />
       </NavLink> 
+
       <Title>WeLL ChiLD</Title>
-      <NavLink to="/" className="link">
+
+      <button onClick={handleToggleModal} className="link">
         <img src={hamb} alt="menu" />
-      </NavLink>
+      </button>
     </BannerContainer>
   )
 }
 
-export default Banner
+const mapStateToProps = state => {
+  return {
+    modal: state.modal
+  }
+}
+
+export default connect(mapStateToProps, { toggleModal })(Banner)
