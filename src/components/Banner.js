@@ -20,6 +20,12 @@ const BannerContainer = styled.div`
 
   /* border: 1px solid red; */
 
+  button {
+    background-color: rgba(0, 0, 0, 0);
+
+    border-radius: 10px;
+  }
+
   .link {
     min-width: 40px;
     width: 5%;
