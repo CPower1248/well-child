@@ -9,7 +9,7 @@ import AgeContent from "./components/AgeContent"
 
 import Modal from "./components/Modal"
 
-function App() {
+function App({ modal }) {
   const { pathname } = useLocation()
 
   const AppWrapper = styled.div`
@@ -38,7 +38,7 @@ function App() {
         <Route path={"/ageContent/:id"} component={AgeContent} />
       </Switch>  
 
-      {/* <Modal/> */}
+      {modal ? <Modal/> : null}
     </AppWrapper>
   );
 }
@@ -46,7 +46,7 @@ function App() {
 // Make state and action for modal display
 const mapStateToProps = state => {
   return {
-    carousel: state.carousel
+    modal: state.modal
   }
 }
 
