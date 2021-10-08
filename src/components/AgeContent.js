@@ -7,6 +7,8 @@ import { getPathname } from "../actions"
 import styled from "styled-components"
 import CategoryContent from "./CategoryContent"
 
+import question_mark from "../images/question_mark.png"
+
 const AgeContentContainer = styled.div`
   display: flex;
   flex-flow: column;
@@ -64,7 +66,8 @@ const Category = styled.div`
   /* border: 1px solid green; */
 
   img {
-    width: 15vw;
+    padding: 1%;
+    width: 13vw;
     height: auto;
 
     border-top-left-radius: 15px;
@@ -110,7 +113,7 @@ function AgeContent({ getPathname }) {
         <CategoryContainer>
         <h3>What most children do by this age:</h3>
           <Category>
-            <img src="https://picsum.photos/75" alt="Social and Emotional" />
+            <img src={question_mark} alt="Social and Emotional" />
             {pathname === `/ageContent/${id}/SE` ?
               <Link to={"/ageContent/" + id} className="categoryLink">Social and Emotional</Link> :
               <Link to={"/ageContent/" + id + "/SE"} className="categoryLink">Social and Emotional</Link>
@@ -119,7 +122,7 @@ function AgeContent({ getPathname }) {
           <Route path={"/ageContent/" + id + "/SE"} component={CategoryContent} />
 
           <Category>
-            <img src="https://picsum.photos/75" alt="Language and Communication" />
+            <img src={question_mark} alt="Language and Communication" />
             {pathname === `/ageContent/${id}/LC` ?
               <Link to={"/ageContent/" + id} className="categoryLink">Language and Communication</Link> :
               <Link to={"/ageContent/" + id +"/LC"} className="categoryLink">Language and Communication</Link>
@@ -128,7 +131,7 @@ function AgeContent({ getPathname }) {
           <Route path={"/ageContent/" + id + "/LC"} component={CategoryContent} />
 
           <Category>
-            <img src="https://picsum.photos/75" alt="Cognitive (Learning, Thinking, Problem-Solving)" />
+            <img src={question_mark} alt="Cognitive (Learning, Thinking, Problem-Solving)" />
             {pathname === `/ageContent/${id}/CL` ?
               <Link to={"/ageContent/" + id} className="categoryLink">Cognitive (Learning, Thinking, Problem-solving)</Link> :
               <Link to={"/ageContent/" + id + "/CL"} className="categoryLink">Cognitive (Learning, Thinking, Problem-solving)</Link>
@@ -137,7 +140,7 @@ function AgeContent({ getPathname }) {
           <Route path={"/ageContent/" + id + "/CL"} component={CategoryContent} />
 
           <Category>
-            <img src="https://picsum.photos/75" alt="Movement and Physical Development" />
+            <img src={question_mark} alt="Movement and Physical Development" />
             {pathname === `/ageContent/${id}/MP` ?
               <Link to={"/ageContent/" + id} className="categoryLink">Movement and Physical Development</Link> :
               <Link to={"/ageContent/" + id + "/MP"} className="categoryLink">Movement and Physical Development</Link>
@@ -149,7 +152,7 @@ function AgeContent({ getPathname }) {
           <Separator />
 
           <Category>
-            <img src="https://picsum.photos/75" alt="Help for parents" />
+            <img src={question_mark} alt="Help for parents" />
             {pathname === `/ageContent/${id}/HP` ?
               <Link to={"/ageContent/" + id} className="categoryLink">Help for parents</Link> :
               <Link to={"/ageContent/" + id + "/HP"} className="categoryLink">Help for parents</Link>
