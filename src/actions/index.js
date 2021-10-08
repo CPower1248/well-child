@@ -10,6 +10,8 @@ export const FETCH_CONTENT_START = "FETCH_CONTENT_START"
 export const FETCH_CONTENT_SUCCESS = "FETCH_CONTENT_SUCCESS"
 export const FETCH_CONTENT_FAIL = "FETCH_CONTENT_FAIL"
 
+export const TOGGLE_MODAL = "TOGGLE_MODAL"
+
 export const getInitial = () => dispatch => {
     dispatch({type: FETCH_INITIAL_START})
 
@@ -36,4 +38,8 @@ export const getContent = (pathname) => dispatch => {
         .catch(err => {
             dispatch({type: FETCH_CONTENT_FAIL, payload: err.message})
         })
+}
+
+export const toggleModal = (modal) => dispatch => {
+    dispatch({type: TOGGLE_MODAL, payload: !modal})
 }

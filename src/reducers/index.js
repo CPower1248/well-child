@@ -1,10 +1,17 @@
-import { FETCH_GET_PATHNAME, FETCH_CONTENT_START, FETCH_CONTENT_SUCCESS, FETCH_CONTENT_FAIL } from "../actions"
+import { 
+    FETCH_GET_PATHNAME,
+    FETCH_CONTENT_START,
+    FETCH_CONTENT_SUCCESS,
+    FETCH_CONTENT_FAIL,
+    TOGGLE_MODAL
+} from "../actions"
 
 export const initialState = {
     isFetching: false,
     error: "",
     content: [],
-    pathname: ""
+    pathname: "",
+    modal: false
 }
 
 export const reducer = (state = initialState, action) => {
@@ -31,6 +38,11 @@ export const reducer = (state = initialState, action) => {
                 ...state,
                 isFetching: false,
                 error: action.payload
+            })
+        case TOGGLE_MODAL:
+            return ({
+                ...state,
+                modal: action.payload
             })
         default:
             return state
