@@ -3,7 +3,7 @@ import { connect } from "react-redux"
 
 import styled from "styled-components"
 import homeIcon from "../images/wc-home.png"
-import hamb from "../images/hamb.png"
+import gear from "../images/gear.png"
 
 import { toggleModal } from "../actions"
 
@@ -22,8 +22,8 @@ const BannerContainer = styled.div`
 
   button {
     background-color: rgba(0, 0, 0, 0);
-
-    border-radius: 10px;
+    
+    border: none;
   }
 
   .link {
@@ -31,7 +31,16 @@ const BannerContainer = styled.div`
     width: 5%;
     margin: 2%;
 
+    transition: all 0.5s ease-in-out; 
+
     /* border: 1px solid blue; */
+
+    &:hover {
+      transform: scale(1.2);
+      transition: all 0.5s ease-in-out; 
+
+      cursor: pointer;
+    }
   }
 `
 
@@ -57,7 +66,7 @@ function Banner({ toggleModal, modal }) {
       <Title>WeLL ChiLD</Title>
 
       <button onClick={handleToggleModal} className="link">
-        <img src={hamb} alt="menu" />
+        <img src={gear} alt="menu" />
       </button>
     </BannerContainer>
   )
