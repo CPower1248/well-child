@@ -73,9 +73,12 @@ const Option = styled.div`
   flex-flow: column;
   justify-content: center;
 
+  width: 25%;
+  height: auto;
+
   text-align: center;
 
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   border-radius: 15px;
 
   &:hover {
@@ -86,13 +89,13 @@ const Option = styled.div`
   }
 
   img {
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 
   span {
     color: rgb(100, 200, 255);
 
-    border: 1px solid red;
+    /* border: 1px solid red; */
   }
 `
 
