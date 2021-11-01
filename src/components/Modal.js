@@ -6,6 +6,7 @@ import { toggleModal } from "../actions"
 
 import smiley from "../images/sad-face.png"
 
+// Make imgs smaller
 const ModalBG = styled.div`
   display: flex;
 	justify-content: center;
