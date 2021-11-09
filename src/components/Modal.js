@@ -6,7 +6,6 @@ import { toggleModal } from "../actions"
 
 import smiley from "../images/sad-face.png"
 
-// modal
 const ModalBG = styled.div`
   display: flex;
 	justify-content: center;
